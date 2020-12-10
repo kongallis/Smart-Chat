@@ -51,6 +51,7 @@ form
 
 button[type="submit"]
     border-radius: 15px
+    transition: 1s
 
 img[src="../../../assets/images/smart_chat_logo.png"]:hover
     cursor: pointer
@@ -65,3 +66,22 @@ img[src="../../../assets/images/smart_chat_logo.png"]:hover
 
     100%
         transform: skewX(-10deg)
+
+button[type="submit"]:hover
+    transform: scale(1.1)
+    transition: 1s
+    background: #3ca854
+    letter-spacing: 3px
+
+input.form-control:active
+    animation: move-input 3s
+
+@keyframes move-input
+    0%
+        transform: translateX(0px)
+
+    50%
+        transform: translateY(-15px)
+
+    100%
+        transform: translateX(0px)
